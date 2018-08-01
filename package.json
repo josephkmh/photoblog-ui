@@ -12,7 +12,7 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
-    "react-scripts": "1.0.17"
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
