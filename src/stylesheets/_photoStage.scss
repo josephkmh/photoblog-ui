@@ -1,0 +1,12 @@
+.photoStage{
+  background-color: $dark;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &__infoAbove{
+    margin-bottom: 20px;
+  }
+  &__photo{
+    max-width: 100%;
+  }
+}

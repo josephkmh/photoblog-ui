@@ -1,0 +1,24 @@
+.imageGrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  &__image{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 320px;
+    max-width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .2s all;
+    margin: 0 10px 10px 0;
+  }
+  &__heading{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

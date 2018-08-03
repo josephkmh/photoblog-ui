@@ -1,0 +1,15 @@
+$accent: #2569D6;
+$accentLighter: #6591D6;
+$accentLightest: #E6EAF0;
+$accentDarker: #0647AF;
+$accentDarkest: #022D72;
+
+$dark: #0f0f0f;
+
+$red: rgba(255,40,40,1);
+
+$lightText: rgb(233,233,233);
+
+@mixin transition() {
+  transition: .2s all;
+}

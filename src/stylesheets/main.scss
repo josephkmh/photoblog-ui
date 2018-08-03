@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'textStyles';
+@import 'header';
+@import 'imageGrid';
+@import 'svgAnimations';
+@import 'photoStage';
+@import 'footer';
+
+.flex{
+  display: flex;
+}
+.flex--rowCenter{
+  flex-direction: row;
+  justify-content: center;
+}
+.flex--colCenter{
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6{
+  color: $accentDarkest;
+  margin-top: 40px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+h1.noTopMargin,
+h2.noTopMargin,
+h3.noTopMargin,
+h4.noTopMargin,
+h5.noTopMargin,
+h6.noTopMargin{
+  margin-top: 0;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light{
+  color: $lightText;
+}
+
+.alignCenter{
+  text-align: center;
+}
+
+.siteTitle{
+  color: $accentLightest;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+  color: $accentLightest;
+  text-decoration: none;
+  @include transition();
+
+  &.spacedLink{
+    margin-right: 20px;
+  }
+  &.spacedLink:last-of-type{
+    margin-right: initial;
+  }
+}
+a:hover{
+  color: $accentDarkest;
+  @include transition();
+}

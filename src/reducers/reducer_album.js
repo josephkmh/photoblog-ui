@@ -1,14 +1,18 @@
 import _ from 'lodash';
 import {
-  FETCH_STREAM,
+  FETCH_ALBUM,
   SORT_IMAGES,
 } from '../actions';
 
-export default function (state = null, action) {
+export default function (state = {}, action) {
   switch (action.type) {
-    case FETCH_STREAM:
-      console.log(action);
-      return action.payload.data.data;
+    case FETCH_ALBUM:
+      if (action.payload.status !== 200) {
+        return {
+          error: true,
+        };
+      }
+      return action.payload.data.album;
     case SORT_IMAGES: {
       const sorted = _.orderBy(state, [action.payload.key], [action.payload.order]);
       return sorted;
